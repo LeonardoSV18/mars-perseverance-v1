@@ -1,0 +1,33 @@
+#mision {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  width: min(560px, calc(100vw - 28px));
+  max-height: calc(100vh - 28px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px;
+  background: rgba(24, 11, 6, 0.74);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 154, 92, 0.55);
+  border-radius: 6px;
+  color: #ffe2bf;
+  font: 12px/1.4 ui-monospace, "IBM Plex Mono", Menlo, Consolas, monospace;
+  z-index: 5;
+  pointer-events: auto;
+}
+#mision[hidden] { display: none; }
+#mision header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+#mision header b { letter-spacing: 0.14em; font-size: 11px; color: #ffb25a; }
+#mision header span { color: #c79a78; font-size: 11px; }
+#mision .rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+#mision .dato { border: 1px solid rgba(255, 178, 90, 0.28); border-radius: 4px; padding: 9px 10px 10px; display: flex; flex-direction: column; gap: 5px; min-width: 0; background: rgba(0, 0, 0, 0.18); }
+#mision .nombre { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; color: #ffcf9b; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
+#mision .valor { font-size: 26px; line-height: 1.1; color: #fff3df; font-weight: 500; font-variant-numeric: tabular-nums; }
+#mision .valor small { font-size: 12px; color: #ffb25a; margin-left: 5px; letter-spacing: 0.05em; }
+#mision .valor.vacio { font-size: 14px; color: #ff8a66; }
+#mision canvas { width: 100%; height: 58px; display: block; }
+#mision .eje { display: flex; justify-content: space-between; color: #b98c6b; font-size: 10px; }
+#mision .frase { color: #f1d3b3; font-size: 11.5px; line-height: 1.45; }
+#mision .prov { color: #b98c6b; font-size: 10px; }
+#mision .prov i { font-style: normal; color: #ffb25a; }

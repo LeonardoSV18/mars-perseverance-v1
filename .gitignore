@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dev.log
+captures/
+openmct/
+mapa-del-repo.html
+public/photos/candidatos/
+.DS_Store
